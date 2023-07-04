@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&family=Open+Sans:wght@300&family=Roboto+Slab:wght@100;200;300;400;500&display=swap');
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -13,15 +16,61 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --secondary: 23, 107, 135;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  font-family: 'Manrope', 'Open Sans', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+}
+
+.nav > li {
+  background-color: rgb(var(--secondary));
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+.nav > li:hover {
+  background-color: red; /* temporary */
+}
+
+.fade-in-text {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0.1;}
+  100% {opacity: 1;}
+}
+
+.hero > .content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  /* grid-template-rows: 1fr 1fr; */
+}
+
+.headshot {
+  width: 550px;
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  background-image: url('../public/self.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+
+.hero {
+  /* background-image: url('../public/self.jpg'); */
+  background-size: cover;
 }
