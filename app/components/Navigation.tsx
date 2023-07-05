@@ -1,12 +1,16 @@
 export default function Navigation() {
     return (
-        <div className="flex flex-row justify-between bg-primary text-white py-4 px-6 items-center">
-            <h1 id="home"><a href="#home">harukikoh.com</a></h1>
-            <ul className="nav flex flex-row justify-evenly gap-4">
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div className="bg-light text-black py-6 px-6 tracking-wider font-semibold 
+            sticky top-0 shadow-md z-10"
+                id="home">
+            <div className="container mx-auto flex flex-row justify-between items-center">
+                <h1 className="link"><a href="#home">HARUKIKOH.COM</a></h1>
+                <ul className="nav flex flex-row justify-evenly gap-16">
+                    <li className="link"><a href="#projects">PROJECTS</a></li>
+                    <li className="link"><a href="#experience">EXPERIENCE</a></li>
+                    <li className="link"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
         </div>
     )
 }
