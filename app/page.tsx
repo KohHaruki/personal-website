@@ -1,6 +1,6 @@
 import Navigation from './components/Navigation'
 import Hero from './components/Hero'
-import KeySkills from './components/KeySkills'
+import AboutMe from './components/AboutMe'
 import Projects from './components/Projects'
 import Experience from './components/Experience'
 
@@ -13,6 +13,7 @@ export default function Home() {
     <main className={`${manrope.className} relative`}>
       <Navigation />
       <Hero />
+      <AboutMe />
       <Projects />
       <Experience />
     </main>

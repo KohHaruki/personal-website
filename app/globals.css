@@ -4,40 +4,30 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary: #F7971E;
+  --secondary: '#FFD200';
+  --text: '#ffffff';
+  --section-underline-width: 40px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
     --primary: #F7971E;
     --secondary: '#FFD200';
+    --text: '#ffffff';
+    --section-underline-width: 40px;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
 }
-
-/* .nav > li {
-  background-color: rgb(var(--secondary));
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
-} */
 
 .link {
   transition: color 0.3s ease;
@@ -45,10 +35,6 @@ body {
 
 .link:hover {
   color: var(--primary); 
-}
-
-@keyframes hoverFadeIn {
-  
 }
 
 .fade-in-text {
@@ -94,16 +80,6 @@ body {
   z-index: -1;
 }
 
-/* .hero > .content {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-} */
-
-/* .keyskills {
-  grid-column: 1 / span 2;
-  grid-row: 2 / 2;
-} */
-
 .headshot {
   width: 550px;
   height: 550px;
@@ -117,18 +93,42 @@ body {
   background-position: 100%;
 }
 
+.title {
+  font-size: 3rem; /* 48px */
+  line-height: 1;
+  padding-bottom: 1.5rem;
+  position: relative;
+  color: black;
+}
+
+.title::after {
+  position: absolute;
+  content: "";
+  width: var(--section-underline-width);
+  height: 5px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2.5px;
+  background-color: var(--primary);
+}
+
 .social-item > a {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 4px;
-  margin-right: 8px;
+  gap: 8px;
+  /* margin-right: 8px; */
+}
+
+.section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .crown {
   display: absolute;
-  
 }
 
 .gold {
@@ -142,7 +142,7 @@ body {
 .gold:hover {
   background: #FDC830;
   background: repeating-linear-gradient(to right, #FDC830 0%, #F37335 100%);
-  background-size: auto auto;
+  background-size: 200% auto;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
