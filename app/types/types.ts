@@ -12,4 +12,7 @@ export type TechName = "Python" |
                     "CSS" |
                     "TailwindCSS" |
                     "PHP" |
-                    "Laravel";
+                    "Laravel" |
+                    "OpenAI API" |
+                    "Git" |
+                    "GitHub";

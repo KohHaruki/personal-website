@@ -1,7 +1,7 @@
 export default function Navigation() {
     return (
         <div className="bg-light text-black py-6 px-6 tracking-wider font-semibold 
-            sticky top-0 shadow-md z-10"
+            fixed top-0 shadow-md z-10 w-full"
         >
             <div className="container mx-auto flex flex-row justify-between items-center">
                 <h1 className="link"><a href="#">HARUKIKOH.COM</a></h1>

@@ -6,27 +6,27 @@
 
 :root {
   --primary: #F7971E;
-  --secondary: '#FFD200';
-  --text: '#ffffff';
+  --secondary: #FFD200;
+  --text: #ffffff;
   --section-underline-width: 40px;
+  --section-padding-top: 4rem;
+  --section-padding-bottom: 3rem;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --primary: #F7971E;
-    --secondary: '#FFD200';
-    --text: '#ffffff';
+    --secondary: #FFD200;
+    --text: #ffffff;
     --section-underline-width: 40px;
   }
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
-}
-
-body {
   margin: 0;
   padding: 0;
+  scroll-padding-top: calc(72px);
 }
 
 .link {
@@ -48,7 +48,7 @@ body {
 
 
 .hero {
-  height: calc(100vh - 72px);
+  height: 100vh;
   z-index: 1;
   position: relative;
 }
@@ -79,7 +79,7 @@ body {
   opacity: 0.1;
   z-index: -1;
 }
-
+/* 
 .headshot {
   width: 550px;
   height: 550px;
@@ -87,11 +87,11 @@ body {
   position: relative;
   display: inline-block;
   border-radius: 20%;
-  background-image: url('../public/self.jpg');
+  background-image: url('../public/selfie.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100%;
-}
+} */
 
 .title {
   font-size: 3rem; /* 48px */
@@ -118,17 +118,27 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   /* margin-right: 8px; */
 }
 
 .section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: var(--section-padding-top);
+  padding-bottom: var(--section-padding-bottom);
 }
 
-.crown {
-  display: absolute;
+.introduction > table > tbody > tr > th {
+  @apply text-left align-top pr-4 pb-2;
+}
+
+.introduction > table > tbody > tr > td {
+  @apply text-left align-top;
+}
+
+
+
+.introduction > table {
+  border-spacing: 1rem;
 }
 
 .gold {
@@ -154,4 +164,10 @@ body {
   to {
     background-position: 200% center;
   }
+}
+
+img.framed {
+  box-shadow:
+    -50px -50px 0 -40px var(--primary),
+    50px 50px 0 -40px var(--primary);
 }

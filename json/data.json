@@ -1,6 +1,7 @@
 {
-    "languages": ["Python", "Java", "C", "React", "Next.js", "Angular", "Express.js", "Node.js", 
-        "JavaScript", "TypeScript", "HTML", "CSS",  "TailwindCSS", "PHP", "Laravel"
+    "languages": ["Python", "Java", "C", "JavaScript", "TypeScript", "React", "Angular", "Next.js", 
+        "Express.js", "Node.js", "HTML", "CSS",  "TailwindCSS", "PHP", "Laravel", "Git", "GitHub",
+        "OpenAI API"
     ],
     "socials": ["Email", "LinkedIn", "GitHub", "Resume"],
     "social-links": {
@@ -29,7 +30,9 @@
         "LinkedIn": "linkedin_icon.svg",
         "GitHub": "github_icon.svg",
         "Email": "email_icon.svg",
-        "Resume": "resume_icon.png"
+        "Resume": "resume_icon.png",
+        "Demo": "internet_icon.svg",
+        "DevPost": "dev_icon.svg"
     },
     "projects": [
         {"id": 0,
@@ -46,7 +49,12 @@
         "bulletPoints": ["Developed a personal AI study coach powered by ChatGPT via the OpenAI API", 
             "Built with React, Vite, JavaScript, TypeScript, Express.js (for REST API), Tailwind CSS, and OpenAI API",
             "Led a team of five, winning the Best Product prize among 70 participants in CISSA’s annual flagship hackathon"],
-        "technologies": ["React", "JavaScript", "TypeScript", "Express.js", "Node.js", "TailwindCSS", "HTML", "CSS"]
+        "technologies": ["React", "OpenAI API", "JavaScript", "TypeScript", "Express.js", "Node.js", "TailwindCSS", "HTML", "CSS"],
+        "links": {
+            "GitHub": "https://github.com/KohHaruki/codebrew2023",
+            "DevPost": "https://devpost.com/software/learn-smart-gpt",
+            "Demo": null
+            }
         }, 
         {"id": 1,
         "title": "Learn Smart GPT",
@@ -62,7 +70,12 @@
         "bulletPoints": ["Developed a personal AI study coach powered by ChatGPT via the OpenAI API", 
             "Built with React, Vite, JavaScript, TypeScript, Express.js (for REST API), Tailwind CSS, and OpenAI API",
             "Led a team of five, winning the Best Product prize among 70 participants in CISSA’s annual flagship hackathon"],
-        "technologies": ["React", "JavaScript", "TypeScript", "Express.js", "Node.js", "TailwindCSS"]
+        "technologies": ["React", "JavaScript", "TypeScript", "Express.js", "Node.js", "TailwindCSS"],
+        "links": {
+            "GitHub": "https://github.com/KohHaruki/codebrew2023",
+            "DevPost": "https://devpost.com/software/learn-smart-gpt",
+            "Demo": ""
+            }
         },
         {"id": 2,
         "title": "Learn Smart GPT",
@@ -78,7 +91,12 @@
         "bulletPoints": ["Developed a personal AI study coach powered by ChatGPT via the OpenAI API", 
             "Built with React, Vite, JavaScript, TypeScript, Express.js (for REST API), Tailwind CSS, and OpenAI API",
             "Led a team of five, winning the Best Product prize among 70 participants in CISSA’s annual flagship hackathon"],
-        "technologies": ["React", "JavaScript", "TypeScript", "Express.js", "Node.js", "TailwindCSS"]
+        "technologies": ["React", "JavaScript", "TypeScript", "Express.js", "Node.js", "TailwindCSS"],
+        "links": {
+            "GitHub": "https://github.com/KohHaruki/codebrew2023",
+            "DevPost": "https://devpost.com/software/learn-smart-gpt",
+            "Demo": ""
+            }
         }
     ]
 }
