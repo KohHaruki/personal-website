@@ -80,9 +80,9 @@ html, body {
 }
 
 .title {
-  font-size: 3rem; /* 48px */
+  font-size: 2rem;
   line-height: 1;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
   position: relative;
   color: black;
 }
@@ -107,6 +107,11 @@ html, body {
   font-weight: bold;
 }
 
+.about-me-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .social-item > a {
   display: flex;
   flex-direction: row;
@@ -127,8 +132,6 @@ html, body {
 .introduction > table > tbody > tr > td {
   @apply text-left align-top;
 }
-
-
 
 .introduction > table {
   border-spacing: 1rem;
@@ -167,4 +170,21 @@ img.framed {
 
 .contact {
   padding-bottom: 6rem;
+}
+
+@media screen and (min-width: 640px) {
+  .title {
+    font-size: 3rem; /* 48px */
+    line-height: 1;
+    padding-bottom: 1.5rem;
+    position: relative;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-me-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

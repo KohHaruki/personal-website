@@ -29,7 +29,7 @@ export default function ProjectItem(props: ProjectItemInterface) {
     const award_text_color = (1 <= props.rank && props.rank <= 3) ? `text-rank-${props.rank}` : '';
 
     return (
-        <div className="relative bg-light rounded-3xl shadow-md p-6 max-w-5xl text-content">
+        <div className="mx-4 sm:mx-0 relative bg-light rounded-3xl shadow-md p-6 max-w-5xl text-content">
             <h2 className="subtitle text-title">{props.title + (props.host ? " @ " + props.host : "")}</h2>
 
             <div className="flex justify-between mb-2">
@@ -77,8 +77,6 @@ export default function ProjectItem(props: ProjectItemInterface) {
                     </ul>
                 </div>
 
-                
-                
                 <div className="date">
                     <Dates startMonth={props.startMonth} startYear={props.startYear} 
                         endMonth={props.endMonth} endYear={props.endYear} isCurrent={props.isCurrent}/>

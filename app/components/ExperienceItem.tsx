@@ -4,7 +4,7 @@ import { ExperienceItemInterface } from "./Experience";
 
 export default function ExperienceItem(props: ExperienceItemInterface) {
     return (
-        <div className="experience-item mt-4">
+        <div className="experience-item mt-4 px-4 sm:px-0">
             <h2 className="subtitle">{props.jobTitle}</h2>
             <h3 className="subsubtitle font-bold">{props.company}</h3>
             <Dates 

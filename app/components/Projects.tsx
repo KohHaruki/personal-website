@@ -8,7 +8,7 @@ export default function Projects() {
         <div className="projects section bg-neutral" id="projects">
             <div className="container mx-auto">
                 <h1 className="title mb-8 text-center tracking-wide font-semibold uppercase">Hackathons & Projects</h1>
-                <div className="grid grid-cols-2 gap-8">
+                <div className="flex flex-col md:grid md:grid-cols-2 gap-8">
                     {data.projects.map((project: ProjectItemInterface, i: number) => {
                         return (
                             <ProjectItem
