@@ -98,5 +98,39 @@
             "Demo": ""
             }
         }
+    ],
+    "experience": [
+        {
+            "id": 0,
+            "jobTitle": "Digital Industry Project Student Consultant",
+            "company": "Practera",
+            "startMonth": 2,
+            "startYear": 2023,
+            "endMonth": 2,
+            "endYear": 2023,
+            "isCurrent": false,
+            "bulletPoints": [
+                "Conducted market research and proposed market expansion strategy for Perdaman Translators International",
+                "Led a team of seven as a project manager, ensuring timely completion of a project by maintaining regular communication among team members",
+                "Compiled a high-quality marketing report in under two weeks that received positive feedback from the client",
+                "Two-week-long initiative by Practera Digital Industry Project"
+            ]
+        },
+        {
+            "id": 1,
+            "jobTitle": "Digital Industry Project Student Consultant",
+            "company": "Practera",
+            "startMonth": 2,
+            "startYear": 2023,
+            "endMonth": 2,
+            "endYear": 2023,
+            "isCurrent": false,
+            "bulletPoints": [
+                "Conducted market research and proposed market expansion strategy for Perdaman Translators International",
+                "Led a team of seven as a project manager, ensuring timely completion of a project by maintaining regular communication among team members",
+                "Compiled a high-quality marketing report in under two weeks that received positive feedback from the client",
+                "Two-week-long initiative by Practera Digital Industry Project"
+            ]
+        }
     ]
 }

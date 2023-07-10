@@ -24,7 +24,8 @@ export default function Hero() {
                                         text={social}
                                         width={SIZE}
                                         height={SIZE}
-                                        isDownload={social === "Email"}
+                                        isDownload={false}
+                                        showText={true}
                                         key={i}
                                     />
                                 )

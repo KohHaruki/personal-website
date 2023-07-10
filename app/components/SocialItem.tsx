@@ -8,7 +8,8 @@ export interface SocialItemProps {
     text: string,
     width: number,
     height: number,
-    isDownload: boolean
+    isDownload: boolean,
+    showText?: boolean
 }
 
 const imageLoader = ({ src }) => {
@@ -21,7 +22,7 @@ export default function SocialItem(props: SocialItemProps) {
         <li className="social-item">
             <a href={props.href} className="link" target="_blank" {...download}>
                 <Image loader={imageLoader} src={props.src} alt={props.alt} width={props.width} height={props.height}></Image>
-                <p>{props.text}</p>
+                {props.showText ? <p>{props.text}</p> : ''}
             </a>
         </li>
     )

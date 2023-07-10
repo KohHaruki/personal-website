@@ -2,6 +2,7 @@ import Technology from "./Technology"
 import SocialItem from "./SocialItem";
 import data from '@/json/data.json'
 import Dates from "./Dates";
+import BulletPoints from "./BulletPoints";
 
 export interface ProjectItemInterface {
     title: string,
@@ -29,7 +30,7 @@ export default function ProjectItem(props: ProjectItemInterface) {
 
     return (
         <div className="relative bg-light rounded-3xl shadow-md p-6 max-w-5xl text-content">
-            <h2 className="text-2xl font-bold mb-2 text-title">{props.title + (props.host ? " @ " + props.host : "")}</h2>
+            <h2 className="subtitle text-title">{props.title + (props.host ? " @ " + props.host : "")}</h2>
 
             <div className="flex justify-between mb-2">
                 <div className="socials">
@@ -44,6 +45,7 @@ export default function ProjectItem(props: ProjectItemInterface) {
                                     width={SIZE}
                                     height={SIZE}
                                     isDownload={false}
+                                    showText={true}
                                 /> : ""
                         }
                         {
@@ -56,6 +58,7 @@ export default function ProjectItem(props: ProjectItemInterface) {
                                     width={SIZE}
                                     height={SIZE}
                                     isDownload={false}
+                                    showText={true}
                                 /> : ""
                         }
                         {
@@ -68,6 +71,7 @@ export default function ProjectItem(props: ProjectItemInterface) {
                                     width={SIZE}
                                     height={SIZE}
                                     isDownload={false}
+                                    showText={true}
                                 /> : ""
                         }
                     </ul>
@@ -84,16 +88,9 @@ export default function ProjectItem(props: ProjectItemInterface) {
             <p className={`mb-1 font-semibold ${award_text_color}`}>
                 {props?.award}
             </p>
+            
+            <BulletPoints bulletPoints={props.bulletPoints}/>
 
-            <div className="mb-2">
-                <ul className="list-disc pl-4">
-                    {props.bulletPoints?.map((bullet: string, i: number) => {
-                        return (
-                            <li key={i}>{bullet}</li>
-                        )
-                    })}
-                </ul>
-            </div>
             <p>Tech: </p>
             <div className="flex flex-row flex-wrap gap-2">
                 {props.technologies.map((language: string, i: number) => {
