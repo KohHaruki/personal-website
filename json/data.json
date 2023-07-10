@@ -35,7 +35,7 @@
         "DevPost": "dev_icon.svg"
     },
     "projects": [
-        {"id": 0,
+        {"id": 2,
         "title": "Learn Smart GPT",
         "host": "Codebrew Hackathon",
         "award": "Best Product Prize",
@@ -55,69 +55,55 @@
             "DevPost": "https://devpost.com/software/learn-smart-gpt",
             "Demo": null
             }
-        }, 
+        },
+
         {"id": 1,
-        "title": "Learn Smart GPT",
-        "host": "Codebrew Hackathon",
-        "award": "Best Product Prize",
-        "startMonth": 4,
+        "title": "Tabular Data Extractor",
+        "host": "CISSA Summer Hack",
+        "award": "Best Technology Prize",
+        "startMonth": 2,
         "startYear": 2023,
-        "endMonth": 4,
+        "endMonth": 2,
+        "endYear": 2023,
+        "rank": 1,
+        "isCurrent": false,
+        "isCrowned": true,
+        "bulletPoints": ["Developed a web application that extracts tabular data out of user-fed images as downloadable CSV files", 
+            "Created with React, Vite, JavaScript, TypeScript, Express.js, and Python (OpenCV, Tesseract OCR)",
+            "Competed as a team of four, winning the Best Technology prize among 51 participants"],
+        "technologies": ["React", "JavaScript", "TypeScript", "Express.js", "Node.js", "Python"],
+        "links": {
+            "GitHub": "https://github.com/KohHaruki/SummerHack2023",
+            "DevPost": null,
+            "Demo": null
+            }
+        },
+
+        {"id": 0,
+        "title": "ZK Anonymous Voting",
+        "host": "Blockchain Hackathon Kuala Lumpur",
+        "award": "2nd Place",
+        "startMonth": 2,
+        "startYear": 2023,
+        "endMonth": 2,
         "endYear": 2023,
         "rank": 2,
         "isCurrent": false,
         "isCrowned": true,
-        "bulletPoints": ["Developed a personal AI study coach powered by ChatGPT via the OpenAI API", 
-            "Built with React, Vite, JavaScript, TypeScript, Express.js (for REST API), Tailwind CSS, and OpenAI API",
-            "Led a team of five, winning the Best Product prize among 70 participants in CISSA’s annual flagship hackathon"],
-        "technologies": ["React", "JavaScript", "TypeScript", "Express.js", "Node.js", "TailwindCSS"],
+        "bulletPoints": ["A Zero Knowledge voting application built with React front-end, Redux state management, and Express.js API calls to Solidity Contracts", 
+            "Includes a login system, a dashboard to interact with the blockchain, and a system for minting and distributing coins every time a user votes",
+            "Swiftly learned the blockchain technology in under a week as a team of four, winning 2nd place among 95 participants"],
+        "technologies": ["React", "Redux", "JavaScript", "TypeScript", "Express.js", "Node.js", "Solidity"],
         "links": {
-            "GitHub": "https://github.com/KohHaruki/codebrew2023",
-            "DevPost": "https://devpost.com/software/learn-smart-gpt",
-            "Demo": ""
-            }
-        },
-        {"id": 2,
-        "title": "Learn Smart GPT",
-        "host": "Codebrew Hackathon",
-        "award": "Best Product Prize",
-        "startMonth": 4,
-        "startYear": 2023,
-        "endMonth": 4,
-        "endYear": 2023,
-        "rank": 3,
-        "isCurrent": false,
-        "isCrowned": true,
-        "bulletPoints": ["Developed a personal AI study coach powered by ChatGPT via the OpenAI API", 
-            "Built with React, Vite, JavaScript, TypeScript, Express.js (for REST API), Tailwind CSS, and OpenAI API",
-            "Led a team of five, winning the Best Product prize among 70 participants in CISSA’s annual flagship hackathon"],
-        "technologies": ["React", "JavaScript", "TypeScript", "Express.js", "Node.js", "TailwindCSS"],
-        "links": {
-            "GitHub": "https://github.com/KohHaruki/codebrew2023",
-            "DevPost": "https://devpost.com/software/learn-smart-gpt",
-            "Demo": ""
+            "GitHub": "https://github.com/bonzonic/KL-Mini-Hack",
+            "DevPost": "https://devpost.com/software/zkanonymousvoting?ref_content=user-portfolio&ref_feature=in_progress",
+            "Demo": null
             }
         }
     ],
     "experience": [
         {
             "id": 0,
-            "jobTitle": "Digital Industry Project Student Consultant",
-            "company": "Practera",
-            "startMonth": 2,
-            "startYear": 2023,
-            "endMonth": 2,
-            "endYear": 2023,
-            "isCurrent": false,
-            "bulletPoints": [
-                "Conducted market research and proposed market expansion strategy for Perdaman Translators International",
-                "Led a team of seven as a project manager, ensuring timely completion of a project by maintaining regular communication among team members",
-                "Compiled a high-quality marketing report in under two weeks that received positive feedback from the client",
-                "Two-week-long initiative by Practera Digital Industry Project"
-            ]
-        },
-        {
-            "id": 1,
             "jobTitle": "Digital Industry Project Student Consultant",
             "company": "Practera",
             "startMonth": 2,
