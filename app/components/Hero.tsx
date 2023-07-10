@@ -4,8 +4,8 @@ import SocialItem from './SocialItem'
 export default function Hero() {
     const SIZE = 20;
     return (
-        <div className="hero h-screen text-center flex justify-center items-center">
-            <div className="container mx-auto align-middle">
+        <div className="hero h-screen text-center flex items-center">
+            <div className="container mx-auto">
                 <div className="fade-in-text">
                     <div>
                         <h1 className="text-6xl sm:text-8xl tracking-wider leading-snug font-bold uppercase px-4">I'm Haruki Koh</h1>
@@ -32,7 +32,15 @@ export default function Hero() {
                         </ul>
                     </div>
 
+                    
+                    <a href="#projects" className='call-to-action inline-block mt-12'>
+                        Check My Projects
+                    </a>
+                    
+                    
                 </div>
+
+                
             </div>
         </div>
     )
