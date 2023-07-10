@@ -7,6 +7,9 @@
 :root {
   --primary: #F7971E;
   --secondary: #FFD200;
+  --neutral: #FAFAFA;
+  --light: #FEFEFE;
+  --shade: #99999933;
   --text: #ffffff;
   --section-underline-width: 40px;
   --section-padding-top: 4rem;
@@ -77,6 +80,19 @@ html, body {
   height: 100%;
   opacity: 0.1;
   z-index: -1;
+}
+
+.hamburger-menu > ul > li {
+  background-color: var(--light);
+  width: 100vw;
+  text-align: right;
+  padding: 0.5rem 2rem;
+  border-top: 1px var(--shade) solid;
+}
+
+.hamburger-menu > ul > li:last-child {
+  border-bottom: 1px var(--shade) solid;
+  box-shadow: 0px 5px 5px var(--shade);
 }
 
 .title {
