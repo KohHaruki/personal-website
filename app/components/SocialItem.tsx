@@ -1,6 +1,4 @@
 "use client"
-import Image from "next/image"
-
 export interface SocialItemProps {
     src: string,
     href: string,
@@ -12,16 +10,12 @@ export interface SocialItemProps {
     showText?: boolean
 }
 
-const imageLoader = ({ src }) => {
-    return `/icons/${src}`;
-}
-
 export default function SocialItem(props: SocialItemProps) {
     let download = props.isDownload ? { download: "Haruki Koh - Resume" } : {};
     return (
         <li className="social-item">
             <a href={props.href} className="link" target="_blank" {...download}>
-                <Image loader={imageLoader} src={props.src} alt={props.alt} width={props.width} height={props.height}></Image>
+                <img src={`icons/${props.src}`} alt={props.alt} width={props.width} height={props.height} />
                 {props.showText ? <p>{props.text}</p> : ''}
             </a>
         </li>

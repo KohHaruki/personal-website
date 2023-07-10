@@ -2,14 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
-
 :root {
   --primary: #F7971E;
   --secondary: #FFD200;
   --neutral: #FAFAFA;
   --light: #FEFEFE;
   --shade: #99999933;
+  --gray: #d3d3d3;
   --text: #ffffff;
   --section-underline-width: 40px;
   --section-padding-top: 4rem;
@@ -87,11 +86,12 @@ html, body {
   width: 100vw;
   text-align: right;
   padding: 0.5rem 2rem;
-  border-top: 1px var(--shade) solid;
+  border-top: 1px var(--gray) solid;
+  margin: 0;
 }
 
 .hamburger-menu > ul > li:last-child {
-  border-bottom: 1px var(--shade) solid;
+  border-bottom: 1px var(--gray) solid;
   box-shadow: 0px 5px 5px var(--shade);
 }
 
@@ -186,6 +186,22 @@ img.framed {
 
 .contact {
   padding-bottom: 6rem;
+}
+
+.call-to-action {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background-color: var(--primary);
+  color: var(--light);
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  transition: 0.25s;
+}
+
+.call-to-action:hover, .call-to-action:focus {
+  transform: translateY(-0.25rem);
 }
 
 @media screen and (min-width: 640px) {
