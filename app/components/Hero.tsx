@@ -1,5 +1,6 @@
 import data from '@/json/data.json'
 import SocialItem from './SocialItem'
+import { SocialMedia } from '@/app/types/types'
 
 export default function Hero() {
     const SIZE = 20;
@@ -14,11 +15,12 @@ export default function Hero() {
                     
                     <div className="socials mt-12 text-content px-4">
                         <ul className="flex flex-row flex-wrap justify-center gap-8 text-xl">
-                            {data.socials.map((social: string, i: number) => {
+                            {data.socials.map((value: string, i: number) => {
+                                const social = value as SocialMedia;
                                 return (
                                     <SocialItem 
-                                        src={data.icons[`${social}`]}
-                                        href={data['social-links'][`${social}`]}
+                                        src={data.icons[social]}
+                                        href={data['social-links'][social]}
                                         alt={social}
                                         text={social}
                                         width={SIZE}

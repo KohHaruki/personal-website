@@ -1,7 +1,6 @@
 {
-    "languages": ["Python", "Java", "C", "JavaScript", "TypeScript", "React", "Angular", "Next.js", 
-        "Express.js", "Node.js", "HTML", "CSS",  "TailwindCSS", "PHP", "Laravel", "Git", "GitHub",
-        "OpenAI API"
+    "languages": ["Python", "Java", "C", "JavaScript", "TypeScript", "React", "Next.js", 
+        "Express.js", "Node.js", "HTML", "CSS",  "TailwindCSS", "Git", "GitHub", "OpenAI API"
     ],
     "socials": ["Email", "LinkedIn", "GitHub", "Resume"],
     "social-links": {
