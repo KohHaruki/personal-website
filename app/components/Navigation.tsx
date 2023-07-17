@@ -1,5 +1,6 @@
 "use client"
 import { useState } from "react";
+import Image from "next/image";
 export default function Navigation() {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
     const SIZE = 30;
@@ -23,7 +24,7 @@ export default function Navigation() {
                     <li className="link"><a href="#contact">CONTACT</a></li>
                 </ul>
                 <div className="hamburger-menu md:hidden">
-                    <img src={src} alt="hamburger menu" width={SIZE} height="auto" onClick={handleMenuToggle}/>
+                    <Image src={src} alt="hamburger menu" width={SIZE} height={SIZE} onClick={handleMenuToggle}/>
                     <ul className={`nav absolute left-0 top-[78px] ${isMenuOpen ? "visible" : "hidden"}`}>
                         <li className="link" onClick={handleMenuToggle}><a href="#about">ABOUT</a></li>
                         <li className="link" onClick={handleMenuToggle}><a href="#projects">PROJECTS</a></li>

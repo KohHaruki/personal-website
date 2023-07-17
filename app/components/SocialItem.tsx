@@ -1,4 +1,4 @@
-"use client"
+import Image from "next/image";
 export interface SocialItemProps {
     src: string,
     href: string,
@@ -15,7 +15,7 @@ export default function SocialItem(props: SocialItemProps) {
     return (
         <li className="social-item">
             <a href={props.href} className="link" target="_blank" {...download}>
-                <img src={`icons/${props.src}`} alt={props.alt} width={props.width} height={props.height} />
+                <Image src={`/icons/${props.src}`} alt={props.alt} width={props.width} height={props.height} />
                 {props.showText ? <p>{props.text}</p> : ''}
             </a>
         </li>

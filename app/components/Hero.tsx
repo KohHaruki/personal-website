@@ -9,7 +9,7 @@ export default function Hero() {
             <div className="container mx-auto">
                 <div className="fade-in-text">
                     <div>
-                        <h1 className="hero-title text-6xl sm:text-8xl tracking-wider leading-snug font-bold uppercase px-4">I'm Haruki Koh</h1>
+                        <h1 className="hero-title text-6xl sm:text-8xl tracking-wider leading-snug font-bold uppercase px-4">I&apos;m Haruki Koh</h1>
                         <h3 className="hero-subtitle text-3xl sm:text-4xl leading-snug mt-6 text-content px-4">Full-stack Developer & CS Student @ UniMelb</h3>
                     </div>
                     

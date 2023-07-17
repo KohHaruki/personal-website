@@ -1,5 +1,7 @@
 import data from '@/json/data.json'
 import Technology from './Technology';
+import Image from 'next/image';
+
 export default function AboutMe() {
     const SIZE = 339;
     return (
@@ -44,7 +46,7 @@ export default function AboutMe() {
                         </table>
                     </div>
 
-                    <img className="framed mx-auto mb-8 lg:mb-0 order-first lg:order-last" src={`selfie_up.jpg`} alt="Haruki Koh" width={SIZE} height="auto"/>
+                    <Image className="framed mx-auto mb-8 lg:mb-0 order-first lg:order-last" src={`/selfie_up.jpg`} alt="Haruki Koh" width={SIZE} height={SIZE}/>
                 </div>
             </div>
         </div>
