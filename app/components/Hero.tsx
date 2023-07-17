@@ -34,15 +34,12 @@ export default function Hero() {
                         </ul>
                     </div>
 
-                    
                     <a href="#projects" className='call-to-action inline-block mt-12'>
                         Check My Projects
                     </a>
                     
-                    
                 </div>
 
-                
             </div>
         </div>
     )
