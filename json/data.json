@@ -105,6 +105,7 @@
             "id": 0,
             "jobTitle": "Digital Industry Project Student Consultant",
             "company": "Practera",
+            "location": "Remote, Melbourne, Australia",
             "startMonth": 2,
             "startYear": 2023,
             "endMonth": 2,
@@ -115,6 +116,21 @@
                 "Led a team of seven as a project manager, ensuring timely completion of a project by maintaining regular communication among team members",
                 "Compiled a high-quality marketing report in under two weeks that received positive feedback from the client",
                 "Two-week-long initiative by Practera Digital Industry Project"
+            ]
+        },
+        {
+            "id": 1,
+            "jobTitle": "Frontend Web Developer Intern",
+            "company": "CodeZero Sdn Bhd",
+            "location": "Remote, Petaling Jaya, Malaysia",
+            "startMonth": 6,
+            "startYear": 2023,
+            "endMonth": null,
+            "endYear": null,
+            "isCurrent": true,
+            "bulletPoints": [
+                "Implemented responsive landing and user registration pages with pure HTML, CSS, and JavaScript",
+                "Evaluated existing and proposed web designs for UI/UX flaws and suggested several improvements in a report"
             ]
         }
     ]

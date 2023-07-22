@@ -5,10 +5,11 @@ export interface ExperienceItemInterface {
     id: number,
     jobTitle: string,
     company: string,
+    location: string,
     startMonth: number,
     startYear: number,
-    endMonth: number,
-    endYear: number,
+    endMonth: number | null,
+    endYear: number | null,
     isCurrent: boolean,
     bulletPoints: Array<string>
 }
@@ -25,6 +26,7 @@ export default function Experience() {
                                 id={exp.id}
                                 jobTitle={exp.jobTitle}
                                 company={exp.company}
+                                location={exp.location}
                                 startMonth={exp.startMonth}
                                 startYear={exp.startYear}
                                 endMonth={exp.endMonth}

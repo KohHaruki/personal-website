@@ -1,8 +1,8 @@
 export interface DatesInterface {
     startMonth: number,
     startYear: number,
-    endMonth?: number,
-    endYear?: number,
+    endMonth?: number | null,
+    endYear?: number | null,
     isCurrent: boolean,
     displayEnd?: boolean,
     displayDuration?: boolean
