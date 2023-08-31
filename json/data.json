@@ -125,12 +125,26 @@
             "location": "Remote, Petaling Jaya, Malaysia",
             "startMonth": 6,
             "startYear": 2023,
+            "endMonth": 9,
+            "endYear": 2023,
+            "isCurrent": false,
+            "bulletPoints": [
+                "Converted Adobe XD design mockups into responsive landing and user registration pages with a multi-step sign-up form in pure HTML, CSS, and JavaScript while following the Web Content Accessibility Guideline (WCAG)",
+                "Evaluated existing and proposed web designs for UI/UX flaws and suggested several improvements in a report"
+            ]
+        }, 
+        {
+            "id": 2,
+            "jobTitle": "Tech & Education Lead",
+            "company": "Google Developer Student Club ",
+            "location": "Melbourne",
+            "startMonth": 8,
+            "startYear": 2023,
             "endMonth": null,
             "endYear": null,
             "isCurrent": true,
             "bulletPoints": [
-                "Implemented responsive landing and user registration pages with pure HTML, CSS, and JavaScript",
-                "Evaluated existing and proposed web designs for UI/UX flaws and suggested several improvements in a report"
+                
             ]
         }
     ]
